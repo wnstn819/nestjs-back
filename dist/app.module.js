@@ -18,7 +18,7 @@ const user_service_1 = require("./user/user.service");
 let AppModule = class AppModule {
 };
 AppModule = __decorate([
-    common_1.Module({
+    (0, common_1.Module)({
         imports: [],
         controllers: [app_controller_1.AppController, cats_controller_1.CatsController, user_controller_1.UserController],
         providers: [app_service_1.AppService, cats_service_1.CatsService, user_service_1.UserService, prisma_service_1.PrismaService],

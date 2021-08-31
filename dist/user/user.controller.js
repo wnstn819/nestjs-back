@@ -52,57 +52,57 @@ let UserController = class UserController {
     }
 };
 __decorate([
-    common_1.Post('user'),
-    __param(0, common_1.Body()),
+    (0, common_1.Post)('user'),
+    __param(0, (0, common_1.Body)()),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Object]),
     __metadata("design:returntype", Promise)
 ], UserController.prototype, "signupUser", null);
 __decorate([
-    common_1.Get(),
-    __param(0, common_1.Param('id')),
+    (0, common_1.Get)(),
+    __param(0, (0, common_1.Param)('id')),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Object]),
     __metadata("design:returntype", Promise)
 ], UserController.prototype, "get", null);
 __decorate([
-    common_1.Get('name/:searchString'),
-    __param(0, common_1.Param('searchString')),
+    (0, common_1.Get)('name/:searchString'),
+    __param(0, (0, common_1.Param)('searchString')),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [String]),
     __metadata("design:returntype", Promise)
 ], UserController.prototype, "getName", null);
 __decorate([
-    common_1.Get('email/:searchString'),
-    __param(0, common_1.Param('searchString')),
+    (0, common_1.Get)('email/:searchString'),
+    __param(0, (0, common_1.Param)('searchString')),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [String]),
     __metadata("design:returntype", Promise)
 ], UserController.prototype, "getEmail", null);
 __decorate([
-    common_1.Get('phone/:searchString'),
-    __param(0, common_1.Param('searchString')),
+    (0, common_1.Get)('phone/:searchString'),
+    __param(0, (0, common_1.Param)('searchString')),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [String]),
     __metadata("design:returntype", Promise)
 ], UserController.prototype, "getPhone", null);
 __decorate([
-    common_1.Put('/:id'),
-    __param(0, common_1.Param('id')),
-    __param(1, common_1.Body()),
+    (0, common_1.Put)('/:id'),
+    __param(0, (0, common_1.Param)('id')),
+    __param(1, (0, common_1.Body)()),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Object, Object]),
     __metadata("design:returntype", void 0)
 ], UserController.prototype, "updateUser", null);
 __decorate([
-    common_1.Delete('/:id'),
-    __param(0, common_1.Param('id')),
+    (0, common_1.Delete)('/:id'),
+    __param(0, (0, common_1.Param)('id')),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Object]),
     __metadata("design:returntype", void 0)
 ], UserController.prototype, "delete", null);
 UserController = __decorate([
-    common_1.Controller('user'),
+    (0, common_1.Controller)('user'),
     __metadata("design:paramtypes", [user_service_1.UserService])
 ], UserController);
 exports.UserController = UserController;

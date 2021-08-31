@@ -35,7 +35,7 @@ export class UserService {
     return await this.prisma.user.findMany();
   }
 
-  async getSearch(params: { where?: Prisma.UserWhereInput }): Promise<User[]> {
+  async getSearch(params: { where: Prisma.UserWhereInput }): Promise<User[]> {
     const { where } = params;
     return await this.prisma.user.findMany({
       where,

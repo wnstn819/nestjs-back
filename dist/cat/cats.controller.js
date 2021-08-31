@@ -37,34 +37,34 @@ let CatsController = class CatsController {
     }
 };
 __decorate([
-    common_1.Get(),
+    (0, common_1.Get)(),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", []),
     __metadata("design:returntype", Array)
 ], CatsController.prototype, "findAll", null);
 __decorate([
-    common_1.Get('db'),
+    (0, common_1.Get)('db'),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", []),
     __metadata("design:returntype", Promise)
 ], CatsController.prototype, "findDb", null);
 __decorate([
-    common_1.Get(':id'),
-    __param(0, common_1.Param()),
-    __param(1, common_1.Query()),
+    (0, common_1.Get)(':id'),
+    __param(0, (0, common_1.Param)()),
+    __param(1, (0, common_1.Query)()),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Object, Object]),
     __metadata("design:returntype", String)
 ], CatsController.prototype, "findOne", null);
 __decorate([
-    common_1.Post('add'),
-    __param(0, common_1.Body()),
+    (0, common_1.Post)('add'),
+    __param(0, (0, common_1.Body)()),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [create_cat_dto_1.CreateCatDto]),
     __metadata("design:returntype", void 0)
 ], CatsController.prototype, "create", null);
 CatsController = __decorate([
-    common_1.Controller('cats'),
+    (0, common_1.Controller)('cats'),
     __metadata("design:paramtypes", [cats_service_1.CatsService])
 ], CatsController);
 exports.CatsController = CatsController;

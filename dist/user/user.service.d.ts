@@ -13,7 +13,7 @@ export declare class UserService {
     }): Promise<User[]>;
     getAll(): Promise<User[]>;
     getSearch(params: {
-        where?: Prisma.UserWhereInput;
+        where: Prisma.UserWhereInput;
     }): Promise<User[]>;
     createUser(data: Prisma.UserCreateInput): Promise<User>;
     updateUser(params: {

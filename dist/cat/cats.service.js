@@ -35,7 +35,7 @@ let CatsService = class CatsService {
     }
 };
 CatsService = __decorate([
-    common_1.Injectable()
+    (0, common_1.Injectable)()
 ], CatsService);
 exports.CatsService = CatsService;
 //# sourceMappingURL=cats.service.js.map
